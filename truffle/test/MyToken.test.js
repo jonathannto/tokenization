@@ -1,8 +1,7 @@
 const Token = artifacts.require("MyToken");
-const { BN } = require("web3-utils"); // Adicionando importação para BN
+const { BN } = require("bn.js");
 
-var chai = require("chai");
-chai.use(require("chai-as-promised"));
+const chai = require("./setupchai.js");
 const expect = chai.expect;
 
 require("dotenv").config({path:"../.env"});
